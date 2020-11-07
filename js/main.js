@@ -37,9 +37,10 @@ function start() {
     score.innerHTML=scorecount;
     pop();
     alreadystarted=true;
-    setTimeout(() =>stopgame = true, 15000)
-        if(stopgame)
-        {alreadystarted=false;}
+    setTimeout(function() {
+        stopgame = true;
+       alreadystarted=false;
+    }, 15000)
 }}
   function wack()
   {
